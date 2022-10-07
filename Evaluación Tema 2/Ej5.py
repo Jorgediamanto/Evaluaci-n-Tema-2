@@ -17,11 +17,30 @@ class Vehiculo():
 
         return "color {}, {} ruedas".format( self.color, self.ruedas )
 
-    def catalogar(self,vehiculos,ruedas=4):
+    def catalogar(self,vehiculos,ruedas=None):
         a1=0
-        for x in vehiculos:
-            if x.ruedas == ruedas:
-                a1+=1
+        if ruedas != None:
+            for x in vehiculos:
+                if x.ruedas == ruedas:
+                    a1+=1
+                    print("Nombre de clase: "+x.__class__.__name__)
+
+                    if x.__class__.__name__ == "Coche":
+                        print("Color: "+x.color)
+                        print("Ruedas: "+str(x.ruedas))
+                        print("Velocidad: "+str(x.velocidad))
+                        print("Cilindrada:"+str(x.cilindrada))
+
+                    if x.__class__.__name__ == "Vehiculo":
+                        print("Color: "+x.color)
+                        print("Ruedas: "+str(x.ruedas))
+
+            print("Se han encontrado "+str(a1)+" vehículos con "+str(ruedas)+" ruedas:")
+
+        else:
+            for x in vehiculos:
+
+                
                 print("Nombre de clase: "+x.__class__.__name__)
 
                 if x.__class__.__name__ == "Coche":
@@ -33,9 +52,6 @@ class Vehiculo():
                 if x.__class__.__name__ == "Vehiculo":
                     print("Color: "+x.color)
                     print("Ruedas: "+str(x.ruedas))
-
-        print("Se han encontrado "+str(a1)+" vehículos con "+str(ruedas)+" ruedas:")
- 
 
  
 
@@ -73,4 +89,4 @@ vehiculos.append(a)
 print(vehiculos)
 
 
-c.catalogar(vehiculos)
+c.catalogar(vehiculos,4)
