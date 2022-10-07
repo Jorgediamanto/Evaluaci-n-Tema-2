@@ -1,5 +1,10 @@
 import os
-import Ej1,Ej2,Ej3,Ej4,Ej5 as Ej1,Ej2,Ej3,Ej4,Ej5
+import Ej1
+import Ej2
+import Ej3
+import Ej4
+import Ej5
+
 
 def iniciar():
     while True:
