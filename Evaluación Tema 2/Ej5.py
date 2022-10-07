@@ -1,5 +1,5 @@
 import itertools
-from locale import ABDAY_1
+
 
 class Vehiculo():
 
@@ -17,7 +17,7 @@ class Vehiculo():
 
         return "color {}, {} ruedas".format( self.color, self.ruedas )
 
-    def catalogar(self,vehiculos,ruedas):
+    def catalogar(self,vehiculos,ruedas=4):
         a1=0
         for x in vehiculos:
             if x.ruedas == ruedas:
@@ -34,7 +34,7 @@ class Vehiculo():
                     print("Color: "+x.color)
                     print("Ruedas: "+str(x.ruedas))
 
-        print("Se han encontrado "+a1+" vehículos con "+ruedas+" ruedas:")
+        print("Se han encontrado "+str(a1)+" vehículos con "+str(ruedas)+" ruedas:")
  
 
  
