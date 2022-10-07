@@ -30,12 +30,15 @@ class Vehiculo():
                         print("Ruedas: "+str(x.ruedas))
                         print("Velocidad: "+str(x.velocidad))
                         print("Cilindrada:"+str(x.cilindrada))
+                        print("")
 
                     if x.__class__.__name__ == "Vehiculo":
                         print("Color: "+x.color)
                         print("Ruedas: "+str(x.ruedas))
+                        print("")
 
             print("Se han encontrado "+str(a1)+" vehículos con "+str(ruedas)+" ruedas:")
+            print("")
 
         else:
             for x in vehiculos:
@@ -48,10 +51,14 @@ class Vehiculo():
                     print("Ruedas: "+str(x.ruedas))
                     print("Velocidad: "+str(x.velocidad))
                     print("Cilindrada:"+str(x.cilindrada))
+                    print("")
 
                 if x.__class__.__name__ == "Vehiculo":
                     print("Color: "+x.color)
                     print("Ruedas: "+str(x.ruedas))
+                    print("")
+
+            print("")
 
  
 
@@ -89,4 +96,7 @@ vehiculos.append(a)
 print(vehiculos)
 
 
+c.catalogar(vehiculos)
+c.catalogar(vehiculos,0)
+c.catalogar(vehiculos,2)
 c.catalogar(vehiculos,4)
