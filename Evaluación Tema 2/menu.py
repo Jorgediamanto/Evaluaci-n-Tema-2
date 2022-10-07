@@ -1,10 +1,9 @@
 import os
-import helpers
 import Ej1,Ej2,Ej3,Ej4,Ej5 as Ej1,Ej2,Ej3,Ej4,Ej5
 
 def iniciar():
     while True:
-        helpers.limpiar_pantalla()
+        
 
         print("========================")
         print("  Bienvenido al Menu  ")
@@ -18,7 +17,7 @@ def iniciar():
         print("========================")
 
         opcion = input("> ")
-        helpers.limpiar_pantalla()
+        
 
         if opcion == '1':
             print("ejecutando ejercicio 1...")
