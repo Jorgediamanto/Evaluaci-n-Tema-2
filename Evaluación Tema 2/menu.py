@@ -20,3 +20,28 @@ def iniciar():
         opcion = input("> ")
         helpers.limpiar_pantalla()
 
+        if opcion == '1':
+            print("ejecutando ejercicio 1...")
+            os.system("Ej1.py 1")
+
+        elif opcion == '2':
+            print("ejecutando ejercicio 1...")
+            os.system("Ej2.py 1")
+
+        elif opcion == '3':
+            print("ejecutando ejercicio 1...")
+            os.system("Ej3.py 1")
+
+        elif opcion == '4':
+            print("ejecutando ejercicio 1...")
+            os.system("Ej4.py 1")
+
+        elif opcion == '5':
+            print("ejecutando ejercicio 1...")
+            os.system("Ej5.py 1")
+
+        elif opcion == '6':
+            print("saliendo...")
+            break
+
+        input("\nPresiona ENTER para continuar...")
