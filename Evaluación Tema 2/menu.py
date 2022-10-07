@@ -14,4 +14,9 @@ def iniciar():
         print("[3] Ejecutar Ejercicio 3 ")
         print("[4] Ejecutar Ejercicio 4 ")
         print("[5] Ejecutar Ejercicio 5 ")
+        print("[6] Cerrar el Menu       ")
         print("========================")
+
+        opcion = input("> ")
+        helpers.limpiar_pantalla()
+
