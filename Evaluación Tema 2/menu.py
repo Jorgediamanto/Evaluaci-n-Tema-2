@@ -22,23 +22,23 @@ def iniciar():
 
         if opcion == '1':
             print("ejecutando ejercicio 1...")
-            os.system("Ej1.py 1")
+            os.system("Ej1.py")
 
         elif opcion == '2':
             print("ejecutando ejercicio 1...")
-            os.system("Ej2.py 1")
+            os.system("Ej2.py")
 
         elif opcion == '3':
             print("ejecutando ejercicio 1...")
-            os.system("Ej3.py 1")
+            os.system("Ej3.py")
 
         elif opcion == '4':
             print("ejecutando ejercicio 1...")
-            os.system("Ej4.py 1")
+            os.system("Ej4.py")
 
         elif opcion == '5':
             print("ejecutando ejercicio 1...")
-            os.system("Ej5.py 1")
+            os.system("Ej5.py")
 
         elif opcion == '6':
             print("saliendo...")
